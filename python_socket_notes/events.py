@@ -5,7 +5,7 @@
 @Desc   : python 使用events实现事件监听的案例
 """
 import socket
-import thread
+import _thread
 
 """
 我们定义一个Event类,一般需要确定定义事件的类型,和event传递的数据
@@ -169,8 +169,8 @@ class CmdService:
             CmdService.socket_server.accept_clients()
             CmdService.started = True
             print('服务已启动！')
-            thread.start_new_thread(CmdService.__check_thread, ())
-        except Exception, e:
+            _thread.start_new_thread(CmdService.__check_thread, ())
+        except Exception as e:
             print('开启服务出错：' + str(e))
             pass
 

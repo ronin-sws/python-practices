@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@File   : __init__.py.py
-@Version: v1.0
-@Date   : 2020-09-20 
-@Desc   : The file is ...
+@File   : __init__.py
+@Date   : 2020-09-20
+@Desc   : The file is python socket 编程 content
 """
