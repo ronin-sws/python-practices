@@ -36,6 +36,6 @@ class Solution2:
 
 class Solution3:
     def wordPattern(self, pattern: str, str: str) -> bool:
-    res=str.split()
-    return list(map(pattern.index, pattern))==list(map(res.index,res))
+        res=str.split()
+        return list(map(pattern.index, pattern))==list(map(res.index,res))
 
