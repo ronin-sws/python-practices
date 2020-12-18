@@ -11,7 +11,6 @@ class CustomList(object):
     def __iter__(self):
         return CustomIterator(self)
 
-
     def add(self, val):
         self.items.append(val)
         
@@ -31,6 +30,7 @@ class CustomIterator(object):
     
     def __iter__(self):
         return self
+
 
 if __name__ == "__main__":
     clist = CustomList()
